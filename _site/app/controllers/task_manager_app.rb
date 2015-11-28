@@ -1,3 +1,4 @@
+require 'yaml/store'
 require 'models/task_manager'
 
 class TaskManagerApp < Sinatra::Base
@@ -21,8 +22,4 @@ class TaskManagerApp < Sinatra::Base
     redirect '/tasks'
   end
 
-  get '/tasks/:id' do |id|
-    @task = TaskManager.find(id.to_i)
-    erb :show
-  end
 end

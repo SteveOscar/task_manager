@@ -3,8 +3,10 @@ class Task
 
   def initialize(data)
     @id = data["id"]
-    @title = data["title"]
     @description = data["description"]
+    @title = data["title"]
   end
+
+  
 
 end
