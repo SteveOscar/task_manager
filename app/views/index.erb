@@ -1,7 +1,21 @@
-<h1>All Tasks</h1>
+<header role="navigation">
+  <ul class="nav nav-pills">
+    <li role="presentation"><a href="/">Home</a></li>
+    <li role="presentation" class="active"><a href="/tasks">Tasks</a></li>
+    <li role="presentation"><a href="/tasks/new">New Task</a></li>
+  </ul>
+</header>
+<div class="container">
+  <h1>All Tasks</h1>
 
-<% @tasks.each do |task| %>
-  <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+  <% @tasks.each do |task| %>
+    <div >
+    <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><button type="button" class="btn btn-success btn-lg"><%= task.title %></button></a></h3>
+    <a class="btn btn-primary btn-lg" href="/tasks/<%= task.id %>/edit">Edit</a>
+  </div>
+  <% end %>
 
-<p><a href='/'>Home</a></p>
+  <p><a href='/'>Home</a></p>
+</div>
+
+<li><a class="btn btn-primary btn-lg" href="/tasks">Task Index</a></li>

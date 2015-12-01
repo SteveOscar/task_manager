@@ -1,8 +1,20 @@
-<h3>New Task Form</h3>
+<header role="navigation">
+  <ul class="nav nav-pills">
+    <li role="presentation"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/tasks">Tasks</a></li>
+    <li role="presentation" class="active"><a href="/tasks/new">New Task</a></li>
+  </ul>
+</header>
+<div class="container">
+  <h2>New Task Form</h2>
 
-<form action="/tasks" method="post">
-  <p>Enter a new task for the list:</p>
-  <p>Title: </p><input type='text' name='task[title]'/><br/>
-  <p>Task: </p><textarea name='task[description]'></textarea><br/>
-  <input type='submit'/>
-</form>
+  <div class="text_box">
+    <form action="/tasks" method="post">
+      <p>Enter a new task for the list:</p>
+      <p>Title: </p><input type='text' name='task[title]'/><br/>
+      <p>Task: </p><textarea class="form-control" rows="3" name='task[description]'></textarea><br/>
+      <input type='submit'/>
+    </form>
+  </div>
+  <p><a href='/'>Home</a></p>
+</div>

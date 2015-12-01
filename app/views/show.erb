@@ -1,7 +1,15 @@
+<header role="navigation">
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="/tasks">Tasks</a></li>
+    <li role="presentation"><a href="/tasks/new">New Task</a></li>
+  </ul>
+</header>
 <a href="/tasks">Task Index</a>
 
 <h2><%= @task.title %></h2>
-
-<p><%= @task.description %></p>
+<div class="show-note">
+  <p><%= @task.description %></p>
+</div>
 
 <p><a href='/'>Home</a></p>

@@ -1,9 +1,21 @@
 ---
 tasks:
 - id: 1
-  title: Assignments
-  description: Finish them allllll
+  title: hw
+  description: s;fakjadsl;fjkasldkjfas;lkasdl;
 - id: 2
   title: asdfasdf
   description: asdfasdfasdf
-total: 2
+- id: 3
+  title: learn stuff
+  description: like bootstrap and stuff like that
+- id: 4
+  title: TacoBell
+  description: oioasijfasoijfaoiseffeoiweaoinsenoivs
+- id: 5
+  title: sfd
+  description: asdfsadf
+- id: 6
+  title: testing
+  description: figure this out
+total: 6
